@@ -8,16 +8,16 @@ import jakarta.persistence.Id;
 public class ShopOwner {
 	
 	@Id
-	@Column(name = "Id")
+	@Column(name = "id")
 	private int shopId;
 	
-	@Column(name = "Shop_name")
+	@Column(name = "shop_name")
 	private String shopName;
 	
-	@Column(name = "Owner_name")
+	@Column(name = "owner_name")
 	private String ownerName;
 	
-	@Column(name = "MailId")
+	@Column(name = "mailId")
 	private String emailId;
 	
 	@Column(name = "ph_no")
