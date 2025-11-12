@@ -2,6 +2,8 @@ package com.tnsif.shopownerservice.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
@@ -9,6 +11,7 @@ public class ShopOwner {
 	
 	@Id
 	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int shopId;
 	
 	@Column(name = "shop_name")
